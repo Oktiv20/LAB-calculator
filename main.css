@@ -1,0 +1,120 @@
+.container {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0);
+}
+
+.calculator__display {
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  text-align: right;
+}
+
+.calculator__keys {
+  background: #d8d9db;
+  display: grid;
+  width: 300px;
+  height: 75px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    ". . . . "
+    "clear clear left divide"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "zero zero zero equal"
+}
+
+.zero {
+  grid-area: zero;
+  background-color: lightgray;
+}
+
+.equal {
+  grid-area: equal;
+  background-color: orange;
+}
+
+.one {
+  grid-area: one;
+  background-color: lightgray;
+}
+
+.two {
+  grid-area: two;
+  background-color: lightgray;
+}
+
+.three {
+  grid-area: three;
+  background-color: lightgray;
+}
+
+.plus {
+  grid-area: plus;
+  background-color: orange
+}
+
+.four {
+  grid-area: four;
+  background-color: lightgray;
+}
+
+.five {
+  grid-area: five;
+  background-color: lightgray;
+}
+
+.six {
+  grid-area: six;
+  background-color: lightgray;
+}
+
+.minus {
+  grid-area: minus;
+  background-color: orange
+}
+
+.seven {
+  grid-area: seven;
+  background-color: lightgray;
+}
+
+.eight {
+  grid-area: eight;
+  background-color: lightgray;
+}
+
+.nine {
+  grid-area: nine;
+  background-color: lightgray;
+}
+
+.times {
+  grid-area: times;
+  background-color: orange
+}
+
+.clear {
+  grid-area: clear;
+  background-color: lightgray;
+}
+
+.left {
+  grid-area: left;
+  background-color: lightgray;
+}
+
+.divide {
+  grid-area: divide;
+  background-color: orange;
+}
+body {
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin: auto;
+}
