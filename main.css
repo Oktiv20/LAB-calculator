@@ -1,20 +1,28 @@
-.container {
+/* .container {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0);
-}
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  margin-top: 75px;
+} */
 
-.calculator__display {
+/* .calculator__display {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: right;
   width: 300px;
   height: 50px;
   padding: 10px;
   text-align: right;
-}
+} */
 
-.calculator__keys {
-  background: #d8d9db;
+/* .calculator__keys {
   display: grid;
-  width: 300px;
+  justify-content: center;
   height: 75px;
   grid-template-columns: repeat(4, auto);
   grid-template-areas:
@@ -24,9 +32,9 @@
     "four five six minus"
     "one two three plus"
     "zero zero zero equal"
-}
+} */
 
-.zero {
+/* .zero {
   grid-area: zero;
   background-color: lightgray;
 }
@@ -117,4 +125,110 @@ body {
   align-items: center;
   height: 600px;
   margin: auto;
+} */
+
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  margin-top: 75px;
+}
+
+.btn-gray {
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.btn-gray:hover {
+  opacity: 0.5;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.btn-o:hover {
+  opacity: 0.5;
+  background-color: #DF974C;
+  cursor: pointer;
+}
+
+.btn-lg-gray:hover {
+  opacity: 0.5;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.btn-Xlg-gray:hover {
+  opacity: 0.5;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.btn-o {
+    color: white;
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: #DF974C;
+    border: 1px solid black ;
+    opacity: 1;
+    transition: 0.3s;
+}
+.btn-lg-gray {
+  font-size: 40px;
+  width: 200px;
+  height: 100px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.btn-Xlg-gray {
+  font-size: 40px;
+  width: 300px;
+  height: 100px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.row-0 {
+  display: flex;
+  justify-content: end;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-family: arial;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+}
+.row-1{
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  width: 400px;
+  height: 100px;
+}
+.row-2 {
+  display: flex;
+  width: 400px;
+  height: 100px;
+}
+
+.row-3 {
+  display: flex;
+  width: 400px;
+  height: 100px;
+}
+.row-4 {
+  display: flex;
+  width: 400px;
+  height: 100px;
+}
+.row-5 {
+  display: flex;
+  width: 400px;
+  height: 100px;
 }
